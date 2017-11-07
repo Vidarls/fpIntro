@@ -2,7 +2,7 @@
 - title : Intro to FP
 - description : Introduction to functional programming
 - author : Vidar Løvbrekke Sømme
-- theme : sky
+- theme : night
 - transition : default
 
 ***
@@ -19,14 +19,14 @@
 
 ### What is functional programming?
 
----
-
-* Many definitions
-* Mathematical functions
-* Immutability
-* Pure functions
-* Monads
-* Lambdas
+<ul>
+<li class="fragment fade-in"> Many definitions</li>
+<li class="fragment fade-in"> Mathematical functions</li>
+<li class="fragment fade-in"> Immutability</li>
+<li class="fragment fade-in"> Pure functions</li>
+<li class="fragment fade-in"> Monads</li>
+<li class="fragment fade-in"> Lambdas</li>
+</ul>
 
 ---
 
@@ -36,11 +36,11 @@ Functional programming is when functions are your unit of composition.
 
 ### A little bit about F#
 
----
-
-* Is a .Net language
-* Runs on the CLR
-* Is a multi paradigm language, with a functional first approach
+<ul>
+<li class="fragment fade-in">Is a .Net language</li>
+<li class="fragment fade-in">Runs on the CLR</li>
+<li class="fragment fade-in">Is a multi paradigm language, with a functional first approach</li>
+</ul>
 
 ---
 
@@ -92,6 +92,13 @@ let hello = makeHello "world"
 ---
 
 ### Function signatures are single method interfaces
+
+    [lang=cs]
+    
+    interface IGetStuff
+    {
+        string GetById(int id)
+    }
 
 *)
 
@@ -241,6 +248,8 @@ let first,second = aTuple
 ### Question and example time
 
 * Ask away, I will try to explain and show with code as best I can
+
+(Slides available at https://vidarls.github.io/fpIntro )
 
 
 
