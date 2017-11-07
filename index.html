@@ -14,7 +14,7 @@
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/sky.css" id="theme">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
     <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
     <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
     <link type="text/css" rel="stylesheet" href="css/custom.css" />
@@ -115,15 +115,13 @@
 <section >
 <section >
 <h3>What is functional programming?</h3>
-</section>
-<section >
 <ul>
-<li>Many definitions</li>
-<li>Mathematical functions</li>
-<li>Immutability</li>
-<li>Pure functions</li>
-<li>Monads</li>
-<li>Lambdas</li>
+<li class="fragment fade-in"> Many definitions</li>
+<li class="fragment fade-in"> Mathematical functions</li>
+<li class="fragment fade-in"> Immutability</li>
+<li class="fragment fade-in"> Pure functions</li>
+<li class="fragment fade-in"> Monads</li>
+<li class="fragment fade-in"> Lambdas</li>
 </ul>
 </section>
 <section >
@@ -133,12 +131,10 @@
 <section >
 <section >
 <h3>A little bit about F#</h3>
-</section>
-<section >
 <ul>
-<li>Is a .Net language</li>
-<li>Runs on the CLR</li>
-<li>Is a multi paradigm language, with a functional first approach</li>
+<li class="fragment fade-in">Is a .Net language</li>
+<li class="fragment fade-in">Runs on the CLR</li>
+<li class="fragment fade-in">Is a multi paradigm language, with a functional first approach</li>
 </ul>
 </section>
 <section >
@@ -200,6 +196,17 @@
 </section>
 <section >
 <h3>Function signatures are single method interfaces</h3>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="cs">
+<span class="k">interface</span> IGetStuff
+{
+    <span class="k">string</span> GetById(<span class="k">int</span> id)
+}
+</code></pre></td></tr></table>
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 </pre></td>
 <td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="k">let</span> <span onmouseout="hideTip(event, 'fs5', 7)" onmouseover="showTip(event, 'fs5', 7)" class="f">getStuff</span> (<span onmouseout="hideTip(event, 'fs6', 8)" onmouseover="showTip(event, 'fs6', 8)" class="f">getById</span><span class="o">:</span><span onmouseout="hideTip(event, 'fs7', 9)" onmouseover="showTip(event, 'fs7', 9)" class="t">int</span><span class="k">-&gt;</span><span onmouseout="hideTip(event, 'fs8', 10)" onmouseover="showTip(event, 'fs8', 10)" class="t">string</span>) (<span onmouseout="hideTip(event, 'fs9', 11)" onmouseover="showTip(event, 'fs9', 11)" class="i">id</span><span class="o">:</span><span onmouseout="hideTip(event, 'fs7', 12)" onmouseover="showTip(event, 'fs7', 12)" class="t">int</span>) <span class="o">=</span> <span onmouseout="hideTip(event, 'fs6', 13)" onmouseover="showTip(event, 'fs6', 13)" class="f">getById</span> <span onmouseout="hideTip(event, 'fs9', 14)" onmouseover="showTip(event, 'fs9', 14)" class="i">id</span> 
